@@ -1,0 +1,12 @@
+---
+name: "PR to Main branch"
+on:
+    pull_request:
+        branches:
+            - main
+jobs:
+    say-hello:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Say Hello
+              run: echo "Hello, PR to main branch!"
